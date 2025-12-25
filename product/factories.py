@@ -24,6 +24,5 @@ class ProductFactory(factory.django.DjangoModelFactory):
         if extracted:
             for category in extracted:
                 self.category.add(category)
-    
     class Meta:
         model = Product
