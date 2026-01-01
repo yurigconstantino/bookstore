@@ -31,8 +31,6 @@ class CategoryOrderViewSet(APITestCase):
             content_type="application/json",
         )
 
-        print(response.data)
-
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
         created_category = Category.objects.get(title="technology")
