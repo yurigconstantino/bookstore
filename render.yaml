@@ -3,4 +3,4 @@ services:
     name: bookstore
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python manage.py migrate && gunicorn projeto.wsgi:application
+    startCommand: python manage.py migrate && gunicorn bookstore.wsgi:application
